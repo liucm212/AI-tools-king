@@ -1,0 +1,16 @@
+@import '_text';
+@import '_space';
+@import '_utilities';
+@import '_reset';
+
+
+body{
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.5;
+}
+.container{
+  max-width: 1296px;
+  margin: 0 auto;
+}
