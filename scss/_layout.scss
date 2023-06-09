@@ -1,0 +1,111 @@
+// 補充bootstrap內沒有設定的space
+// margin
+.mb{
+  &-4{
+    margin-bottom: 0.4rem;
+  }
+  &-8{
+    margin-bottom: 0.8rem;
+  }
+  &-12{
+    margin-bottom: 1.2rem;
+  }
+  &-20{
+    margin-bottom: 2.0rem;
+  }
+  &-24{
+    margin-bottom: 2.4rem;
+  }
+  &-40{
+    margin-bottom: 4.0rem;
+  }
+  &-78{
+    margin-bottom: 7.8rem;
+  }
+  &-80{
+    margin-bottom: 8.0rem;
+  }
+  &-100{
+    margin-bottom: 10.0rem;
+  }
+  &-160{
+    margin-bottom: 16.0rem;
+  }
+}
+
+// padding
+// padding top and bottom
+.py{
+  &-20{
+    padding-top: 2.0rem ;
+    padding-bottom: 2.0rem;
+  }
+  &-32{
+    padding-top: 3.2rem ;
+    padding-bottom: 3.2em;
+  }
+  &-40{
+    padding-top: 4.0rem ;
+    padding-bottom: 4.0rem;
+  }
+  &-80{
+    padding-top: 8.0rem ;
+    padding-bottom: 8.0rem;
+  }
+  &-160{
+    padding-top: 16.0rem ;
+    padding-bottom: 16.0rem;
+  }
+}
+
+// padding left and right
+.px{
+  &-0{
+    padding-left: 0rem ;
+    padding-right: 0rem;
+  }
+  &-32{
+    padding-left: 3.2rem ;
+    padding-right: 3.2rem;
+  }
+  &-40{
+    padding-left: 4.0rem ;
+    padding-right: 4.0rem;
+  }
+}
+
+
+// 子元素的間距
+// !放在父元素中
+.qx{
+  &-12 > :not(:last-child){
+    margin-right: 1.2rem;
+  }
+  &-16 > :not(:last-child){
+    margin-right: 1.6rem;
+  }
+  &-20 > :not(:last-child){
+    margin-right: 2.0rem;
+  }
+  &-24 > :not(:last-child){
+    margin-right: 2.4rem;
+  }
+}
+.qy{
+  &-8 > :not(:last-child){
+    margin-bottom: 0.8rem;
+  }
+  &-12 > :not(:last-child){
+    margin-bottom: 1.2rem;
+  }
+  &-16 > :not(:last-child){
+    margin-bottom: 1.6rem;
+  }
+  &-20 > :not(:last-child){
+    margin-bottom: 2.0rem;
+  }
+  &-24 > :not(:last-child){
+    margin-bottom: 2.4rem;
+  }
+}
+

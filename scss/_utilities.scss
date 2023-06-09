@@ -21,3 +21,92 @@
     }
   }
 }
+
+// color
+.black{
+  &-100{
+    color: #020202;
+  }
+  &-80{
+    color: #525252;
+  }
+  &-60{
+    color: #919191;
+  }
+  &-40{
+    color: #d1d1d1;
+  }
+  &-20{
+    color: #f2f2f2;
+  }
+  &-0{
+    color: #ffffff;
+  }
+}
+
+// display:none
+.hidden{
+  display: none;
+}
+
+// display
+.d{
+  &-flex{
+    display: flex;
+  }
+  &-block{
+    display: block;
+  }
+  &-inline{
+    display: inline;
+  }
+  &-inlineBlock{
+    display: inline-block;
+  }
+}
+
+// flex
+// .flex{
+//   &-jcc{
+//     justify-content: center;
+//   }  
+//   &-jcfs{
+//     justify-content: flex-start;
+//   } 
+//   &-jcfe{
+//     justify-content: flex-end;
+//   } 
+//   &-jcsb{
+//     justify-content: space-between;
+//   } 
+//   &-jcsa{
+//     justify-content: space-around;
+//   } 
+//   &-aic{
+//     align-items: center;
+//   } 
+//   &-aifs{
+//     align-items: flex-start;
+//   } 
+//   &-aife{
+//     align-items: flex-end;
+//   } 
+// }
+
+// border
+.border{
+  border: 1px solid #fff;
+  &-bottom{
+    border-bottom: 1px solid #fff;
+  }
+  &-top{
+    border-top: 1px solid #fff;
+  }
+}
+
+// overflow
+.overflow{
+  &-hidden{
+    overflow: hidden;
+  }
+}
