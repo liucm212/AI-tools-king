@@ -133,10 +133,12 @@ a{
   }
 }
 
-// cardlist
-// .cardList > :not(:nth-child(3n+3)){
-//   margin-right: 2.4rem;
-// }
+// search-section
+.search{
+  &-input{
+    border: none;
+  }
+}
 
 
 // ai_card
@@ -187,14 +189,6 @@ a{
     }
   }
 }
-
-// 校正.row的padding
-.row > *{
-  padding-left: 0rem;
-  padding-right: 0rem;
-}
-
-// list-group
 
 .item{
   &-model{
