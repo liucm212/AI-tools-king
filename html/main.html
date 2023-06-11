@@ -22,7 +22,7 @@
           <div
             class="row justify-content-between align-items-center border-bottom py-20 mb-40"
           >
-            <div class="col-3">
+            <div class="col-6 col-md-3">
               <div class="logo">
                 <h1>
                   <a href="#">
@@ -34,11 +34,18 @@
                 </h1>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-md-4 col-2">
               <nav>
                 <ul class="d-flex qx-20 justify-content-end fz-16">
-                  <li class="mr-20"><a href="#">首頁</a></li>
-                  <li><a href="#">定價</a></li>
+                  <li class="mr-20 nav-title"><a href="#">首頁</a></li>
+                  <li class="nav-title"><a href="#">定價</a></li>
+                  <li class="nav-img">
+                    <a href="#"
+                      ><span class="material-symbols-outlined nav-img">
+                        density_medium
+                      </span></a
+                    >
+                  </li>
                 </ul>
               </nav>
             </div>
@@ -52,7 +59,7 @@
           <section>
             <div class="row">
               <div class="col">
-                <h2 class="fz-120 ta-l mb-40 fw-900">
+                <h2 class="header-title fz-120 ta-l mb-40 fw-900">
                   透過<br />
                   AI 工具王的<br />
                   強大模型<br />
@@ -94,18 +101,18 @@
           <section>
             <h3 class="hidden">service</h3>
             <div class="row mb-80">
-              <div class="col-4">
-                <h4 class="fz-32 ta-l">我們的服務</h4>
+              <div class="col-12 col-md-4">
+                <h4 class="service-title fz-32 ta-l">我們的服務</h4>
               </div>
-              <div class="col-8">
-                <p class="fz-48 ta-l">
+              <div class="col-12 col-md-8">
+                <p class="service-body fz-48 ta-l">
                   我們相信透過 AI 技術，<br />
                   包括圖像識別、自然語言處理和機器翻譯等，讓您更快、更準確地做出決策。
                 </p>
               </div>
             </div>
             <div class="row mb-160">
-              <div class="col-4">
+              <div class="col-md-4">
                 <div class="serviceCard">
                   <img
                     class="card-img"
@@ -118,7 +125,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col-4">
+              <div class="col-md-4">
                 <div class="serviceCard">
                   <img
                     class="card-img"
@@ -131,7 +138,7 @@
                   </p>
                 </div>
               </div>
-              <div class="col-4">
+              <div class="col-md-4">
                 <div class="serviceCard">
                   <img
                     class="card-img"
@@ -245,8 +252,8 @@
               <!-- partner evaluation -->
               <h4 class="hidden">partner evaluation</h4>
               <div class="row evaluation mb-160">
-                <div class="col-4">
-                  <article>
+                <div class="col-md-4">
+                  <article id="evaluation-01">
                     <div class="evaluation-card">
                       <div class="evaluation-star">
                         <img
@@ -289,8 +296,8 @@
                     </div>
                   </article>
                 </div>
-                <div class="col-4">
-                  <article>
+                <div class="col-md-4">
+                  <article id="evaluation-02">
                     <div class="evaluation-card">
                       <div class="evaluation-star">
                         <img
@@ -334,8 +341,8 @@
                     </div>
                   </article>
                 </div>
-                <div class="col-4">
-                  <article>
+                <div class="col-md-4">
+                  <article id="evaluation-03">
                     <div class="evaluation-card">
                       <div class="evaluation-star">
                         <img
@@ -379,67 +386,78 @@
                     </div>
                   </article>
                 </div>
+                <div class="evaluation-footer col-12">
+                  <ul class="d-flex justify-content-center align-items-center">
+                    <li class="evaluation-dot active-dot"><a href="#"></a></li>
+                    <li class="evaluation-dot"><a href="#"></a></li>
+                    <li class="evaluation-dot"><a href="#"></a></li>
+                  </ul>
+                </div>
               </div>
             </section>
           </section>
         </div>
         <!-- AI tools -->
-        <section class="black-100 ta-l bg-black-0 py-160">
+        <section class="black-100 ta-l bg-black-0 py-160 border-radius">
           <div class="container">
             <header class="row">
-              <div class="col">
-                <h4 class="fz-80 fw900 ta-c mb-80">
+              <div class="col-md-12">
+                <h4 class="AI-header fz-80 fw900 ta-c mb-80">
                   這些超酷的應用，都來自 AI工具王
                 </h4>
               </div>
             </header>
             <section class="row">
-              <div class="col bg-black-20 px-40 py-20">
-                <div class="d-flex justify-content-start align-items-center">
-                  <div>
-                    <img
-                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/search.png?raw=true"
-                      alt="search-icon"
-                    />
-                  </div>
-                  <input type="text" placeholder="輸入關鍵字搜尋" class="=" />
+              <div class="mb-24">
+                <div
+                  class="d-flex justify-content-center align-items-center position-relative"
+                >
+                  <span class="material-symbols-outlined search-icon">
+                    search
+                  </span>
+                  <input
+                    type="text"
+                    placeholder="輸入關鍵字搜尋"
+                    class="search-input border-none bg-black-20 fz-16 py-20 px-40 d-block border-radius col-md-12 bg-black-20 pl-76"
+                  />
                 </div>
               </div>
             </section>
             <section>
-              <div class="col-3">
-                <button>
-                  <p>篩選</p>
-                  <div>
-                    <img
-                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/sliders-horizontal.png?raw=true"
-                      alt="filter"
-                    />
-                  </div>
-                </button>
-              </div>
-              <div class="col-6">
-                <ul>
-                  <li class="search-item active"><a href="#">全部</a></li>
-                  <li class="search-item"><a href="#">聊天</a></li>
-                  <li class="search-item"><a href="#">影像辨識</a></li>
-                  <li class="search-item"><a href="#">翻譯</a></li>
-                  <li class="search-item"><a href="#">行銷</a></li>
-                  <li class="search-item"><a href="#">克服</a></li>
-                  <li class="search-item"><a href="#">生產力</a></li>
-                </ul>
-              </div>
-              <div class="col-3">
-                <button>
-                  <p>由新到舊</p>
-                  <p class="hidden">由舊到新</p>
-                  <div>
-                    <img
-                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/keyboard%20arrow%20down.png?raw=true"
-                      alt="arrow-down"
-                    />
-                  </div>
-                </button>
+              <div class="row justify-content-between align-items-center mb-60">
+                <div class="col-6 col-md-auto filter-selector">
+                  <a
+                    class="button-filter d-flex black-100 align-items-center px-40 py-20"
+                  >
+                    <p class="mr-12">篩選</p>
+                    <span class="material-symbols-outlined"> filter_alt </span>
+                  </a>
+                </div>
+                <div class="col-12 col-md-6 ta-c filter-type">
+                  <ul
+                    class="d-flex justify-content-around button-search black-100"
+                  >
+                    <li class="button-search-item active-60 black-60">
+                      <a href="#">全部</a>
+                    </li>
+                    <li class="button-search-item"><a href="#">聊天</a></li>
+                    <li class="button-search-item"><a href="#">影像辨識</a></li>
+                    <li class="button-search-item"><a href="#">翻譯</a></li>
+                    <li class="button-search-item"><a href="#">行銷</a></li>
+                    <li class="button-search-item"><a href="#">克服</a></li>
+                    <li class="button-search-item"><a href="#">生產力</a></li>
+                  </ul>
+                </div>
+                <div class="col-auto col-md-auto filter-sorting">
+                  <a
+                    class="button-filter d-flex black-100 align-items-center px-40 py-20"
+                  >
+                    <p>由新到舊</p>
+                    <span class="material-symbols-outlined">
+                      arrow_downward_alt
+                    </span>
+                  </a>
+                </div>
               </div>
             </section>
 
@@ -629,15 +647,15 @@
             </ul>
 
             <!-- page -->
-            <div class="row">
-              <div class="col">
-                <ul class="pages">
-                  <li class="page-item"><a href="#">1</a></li>
-                  <li class="page-item"><a href="#">2</a></li>
-                  <li class="page-item"><a href="#">3</a></li>
-                  <li class="page-item"><a href="#">4</a></li>
-                  <li class="page-item"><a href="#">5</a></li>
-                  <li class="page-item page-item-next">
+            <div class="AI_page row justify-content-end ta-c black-100 fz-12">
+              <div class="col-md-auto">
+                <ul class="button-pages d-flex justify-content-end">
+                  <li class="button-page-item active-100"><a href="#">1</a></li>
+                  <li class="button-page-item"><a href="#">2</a></li>
+                  <li class="button-page-item"><a href="#">3</a></li>
+                  <li class="button-page-item"><a href="#">4</a></li>
+                  <li class="button-page-item"><a href="#">5</a></li>
+                  <li class="button-page-item button-page-item-next">
                     <a href="#"
                       ><img
                         src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/keyboard%20arrow%20right.png?raw=true"
@@ -656,7 +674,9 @@
             <h3 class="hidden">sub main</h3>
             <div class="row flex-column align-items-center py-160">
               <div class="col">
-                <h4 class="fz-48 fw-900 mb-40">現在就來建立屬於你的服務吧</h4>
+                <h4 class="submain-header fz-48 fw-900 mb-40">
+                  現在就來建立屬於你的服務吧
+                </h4>
               </div>
               <div class="col d-flex justify-content-center">
                 <a href="#" class="d-flex button qx-16 py-20 px-40 fz-20 fw900">
@@ -666,17 +686,18 @@
               </div>
             </div>
           </section>
+
           <!-- subnav -->
           <section>
             <h3 class="hidden">sub nav</h3>
             <div class="row justify-content-between py-80 border-top">
-              <div class="col-6">
+              <div class="subnav-text col-12 col-md-6">
                 <ul class="fz-80 fw-900 ta-l qy-8">
-                  <li><a href="#">首頁</a></li>
-                  <li><a href="">定價</a></li>
+                  <li class="subnav-text-title"><a href="#">首頁</a></li>
+                  <li class="subnav-text-title"><a href="#">定價</a></li>
                 </ul>
               </div>
-              <div class="col-6 d-flex justify-content-end">
+              <div class="subnav-img col-8 col-md-6 d-flex justify-content-end">
                 <!-- 用寬度來限制img的最大值 -->
                 <a href="#" class="subnav-pic">
                   <img
@@ -694,23 +715,26 @@
       <div class="container">
         <footer>
           <div class="row lh-15 py-32 border-top">
-            <div class="col-2 d-flex justify-content-start">
+            <div
+              class="footer-copyRight col-6 col-md-2 d-flex justify-content-start"
+            >
               <h6>AI工具王 &copy; 2023</h6>
             </div>
-            <div class="col-8">
-              <ul class="socialMedia d-flex qx-20">
+            <div class="col-12 col-md-8 footer-socialMedia">
+              <ul class="d-flex qx-20">
                 <li><a href="#">Facebook</a></li>
                 <li><a href="#">Twitter</a></li>
                 <li><a href="#">Instagram</a></li>
               </ul>
             </div>
-            <div class="col-2 d-flex justify-content-end">
-              <a href="#" class="d-flex qx-16">
+            <div
+              class="footer-backToTop col-auto col-md-2 d-flex justify-content-end"
+            >
+              <a href="#" class="d-flex">
                 <p>Back To Top</p>
-                <img
-                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/arrow%20upward.png?raw=true"
-                  alt="arrow-up"
-                />
+                <span class="material-symbols-outlined">
+                  arrow_upward_alt
+                </span>
               </a>
             </div>
           </div>

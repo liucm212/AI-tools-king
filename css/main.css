@@ -86,6 +86,9 @@ img {
 .mb-40 {
   margin-bottom: 4rem;
 }
+.mb-60 {
+  margin-bottom: 6rem;
+}
 .mb-78 {
   margin-bottom: 7.8rem;
 }
@@ -97,6 +100,28 @@ img {
 }
 .mb-160 {
   margin-bottom: 16rem;
+}
+
+.mr-4 {
+  margin-right: 0.4rem;
+}
+.mr-8 {
+  margin-right: 0.8rem;
+}
+.mr-12 {
+  margin-right: 1.2rem;
+}
+.mr-15 {
+  margin-right: 1.5rem;
+}
+.mr-20 {
+  margin-right: 2rem;
+}
+.mr-24 {
+  margin-right: 2.4rem;
+}
+.mr-40 {
+  margin-right: 4rem;
 }
 
 .py-20 {
@@ -131,6 +156,10 @@ img {
 .px-40 {
   padding-left: 4rem;
   padding-right: 4rem;
+}
+
+.pl-76 {
+  padding-left: 7.6rem;
 }
 
 .qx-12 > :not(:last-child) {
@@ -220,11 +249,17 @@ img {
 .border {
   border: 1px solid #fff;
 }
+.border-none {
+  border: none;
+}
 .border-bottom {
   border-bottom: 1px solid #fff;
 }
 .border-top {
   border-top: 1px solid #fff;
+}
+.border-radius {
+  border-radius: 1.6rem;
 }
 
 .overflow-hidden {
@@ -291,6 +326,7 @@ body {
   text-align: center;
   line-height: 1.2;
   font-family: "Noto Sans TC", sans-serif;
+  font-size: 1.6rem;
 }
 
 a {
@@ -303,10 +339,27 @@ a {
   background-color: #fff;
   color: #1e1e1e;
 }
+.button-filter {
+  cursor: pointer;
+  border: #f2f2f2 solid 1px;
+  border-radius: 1.6rem;
+}
+.button-search-item {
+  padding: 0.8rem 1.6rem;
+  color: #020202;
+  font-weight: 400;
+}
+.button-page-item {
+  padding: 2rem;
+}
 
 .container {
   max-width: 1296px;
   margin: 0 auto;
+}
+
+.nav-img {
+  display: none;
 }
 
 .animation-item {
@@ -333,7 +386,6 @@ a {
   margin-bottom: 2rem;
 }
 .serviceCard .card-content {
-  font-size: 1.6rem;
   font-weight: 400;
   text-align: left;
 }
@@ -377,7 +429,6 @@ a {
 }
 .evaluation-content {
   line-height: 1.5;
-  font-size: 1.6rem;
   text-align: left;
   font-weight: 400;
   margin-bottom: auto;
@@ -389,19 +440,33 @@ a {
 .evaluation-partner img {
   margin-right: 1.6rem;
 }
+.evaluation-dot {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 100%;
+  background-color: #525252;
+  display: none;
+}
 
 .partner-info {
   text-align: left;
 }
 .partner-name {
   font-weight: 700;
-  font-size: 1.6rem;
   line-height: 1.5;
 }
 .partner-company {
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 1.5;
+}
+
+.search-icon {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  left: 4.3rem;
+  top: 1.8rem;
 }
 
 .AIcard {
@@ -448,23 +513,29 @@ a {
   padding: 2rem 3.2rem;
 }
 
-.row > * {
-  padding-left: 0rem;
-  padding-right: 0rem;
+.item-name {
+  font-weight: 400;
 }
 
-.item-model {
-  font-size: 1.6rem;
+.active-60 {
+  border-radius: 1.6rem;
+  background-color: #d1d1d1;
+  font-weight: 700;
 }
-.item-name {
-  font-size: 1.6rem;
-  font-weight: 400;
+.active-100 {
+  border-radius: 1.6rem;
+  background-color: #020202;
+  font-weight: 700;
+}
+.active-dot {
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: #fff;
 }
 
 .hashtag {
   cursor: pointer;
   color: #020202;
-  font-size: 1.6rem;
   font-weight: 400;
 }
 
@@ -478,8 +549,95 @@ a {
   }
 }
 @media screen and (max-width: 414px) {
+  .container {
+    max-width: 375px;
+  }
   .AIcard {
     width: 100%;
     margin-bottom: 1.2rem;
+  }
+  .nav-title {
+    display: none;
+  }
+  .nav-img {
+    display: block;
+  }
+  .header-title {
+    font-size: 4.8rem;
+  }
+  .service-title {
+    font-size: 2rem;
+    margin-bottom: 2.4rem;
+  }
+  .service-body {
+    font-size: 3.2rem;
+  }
+  .serviceCard {
+    margin-bottom: 2.4rem;
+  }
+  #evaluation-02 {
+    display: none;
+  }
+  #evaluation-03 {
+    display: none;
+  }
+  .evaluation-footer {
+    margin-top: 2.4rem;
+    padding: 1.6rem;
+  }
+  .evaluation-dot {
+    display: block;
+    margin: 0.4rem;
+  }
+  .AI-header {
+    font-size: 3.2rem;
+  }
+  .AI-page {
+    justify-content: center;
+  }
+  .button-pages {
+    justify-content: center;
+  }
+  .search-input {
+    width: 100%;
+  }
+  .filter-selector {
+    order: 1;
+  }
+  .filter-type {
+    order: 3;
+  }
+  .filter-sorting {
+    margin-top: 2.4rem;
+    order: 2;
+  }
+  .submain-header {
+    font-size: 3.2rem;
+  }
+  .subnav-text {
+    order: 2;
+  }
+  .subnav-img {
+    order: 1;
+    margin-bottom: 4rem;
+  }
+  .subnav-text-title {
+    font-size: 4.8rem;
+  }
+  footer .row {
+    justify-content: space-between;
+  }
+  .footer-copyRight {
+    order: 1;
+    margin-bottom: 2.4rem;
+  }
+  .footer-socialMedia {
+    order: 3;
+  }
+  .footer-socialMedia ul {
+    justify-content: flex-start;
+  }
+  .footer-backToTop {
+    order: 2;
   }
 }/*# sourceMappingURL=main.css.map */

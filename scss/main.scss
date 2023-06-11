@@ -12,6 +12,7 @@ body{
   text-align: center;
   line-height: 1.2;
   font-family: "Noto Sans TC", sans-serif;
+  font-size: 1.6rem;
 }
 a{
   text-decoration: none;
@@ -24,11 +25,32 @@ a{
     background-color: #fff;
     color: #1e1e1e;
   }
+  &-filter{
+    cursor: pointer;
+    border: #f2f2f2 solid 1px;
+    border-radius: 1.6rem;
+  }
+  &-search-item{
+    padding: 0.8rem 1.6rem;
+    color: #020202;
+    font-weight: 400;
+  }
+  &-page-item{
+    padding: 2.0rem;
+  }
 }
 .container{
   max-width: 1296px;
   margin: 0 auto;
 }
+// nav
+.nav{
+  &-img{
+    display: none;
+  }
+}
+
+
 .animation-item{
   width: 180px;
 }
@@ -51,7 +73,6 @@ a{
     margin-bottom: 2.0rem;
   }
   .card-content{
-    font-size: 1.6rem;
     font-weight: 400;
     text-align: left;
   }
@@ -102,7 +123,6 @@ a{
   }
   &-content{
     line-height: 1.5;
-    font-size: 1.6rem;
     text-align: left;
     font-weight: 400;
     margin-bottom: auto;
@@ -114,6 +134,14 @@ a{
       margin-right: 1.6rem;
     }
   }
+  &-dot{
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 100%;
+    background-color: #525252;
+    display: none;
+
+  }
 }
 
 // evaluation-partner
@@ -123,7 +151,6 @@ a{
   }
   &-name{
     font-weight: 700;
-    font-size: 1.6rem;
     line-height: 1.5;
   }
   &-company{
@@ -132,8 +159,14 @@ a{
     line-height: 1.5;
   }
 }
-input{
-  border: none;
+
+
+.search-icon{
+  display: block;
+  position: absolute;
+  z-index: 1;
+  left:4.3rem;
+  top: 1.8rem;
 }
 
 
@@ -187,23 +220,41 @@ input{
 }
 
 .item{
-  &-model{
-    font-size: 1.6rem;
-  }
   &-name{
-    font-size: 1.6rem;
     font-weight: 400;
   }
+}
+.active{
+  &-60{
+    border-radius: 1.6rem;
+    background-color: #d1d1d1;
+    font-weight: 700;
+  }
+  &-100{
+    border-radius: 1.6rem;
+    background-color: #020202;
+    font-weight: 700;
+  }
+  &-dot{
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: #fff;
+    
+  }
+  
 }
 .hashtag {
   cursor: pointer;
   color: #020202;
-  font-size: 1.6rem;
   font-weight: 400;
 }
-.share-icon {
-  cursor: pointer;
+.share{
+  &-icon {
+    cursor: pointer;
+  }
 }
+
+
 
 // 415-768
 @media screen and (max-width: 768px) {
@@ -213,7 +264,117 @@ input{
 
 }
 @media screen and (max-width: 414px) {
+  .container{
+    max-width: 375px;
+  }
   .AIcard {
     width: 100%;
     margin-bottom: 1.2rem;
   }
+  .nav{
+    &-title{
+      display: none;
+    }
+    &-img{
+      display: block;
+    }
+  }
+  .header{
+    &-title{
+      font-size: 4.8rem;
+    }
+  }
+  .service{
+    &-title{
+      font-size: 2.0rem;
+      margin-bottom: 2.4rem;
+    }
+    &-body{
+      font-size: 3.2rem;
+    }
+  }
+  .serviceCard{
+    margin-bottom: 2.4rem;
+  }
+  #evaluation{
+    &-02{
+      display: none;
+    }
+    &-03{
+      display: none;
+    }
+  }
+  .evaluation{
+    &-footer{
+      margin-top: 2.4rem;
+      padding:1.6rem;
+    }
+    &-dot{
+      display: block;
+      margin: 0.4rem;
+    }
+  }
+  .AI{
+    &-header{
+      font-size: 3.2rem;
+    }
+    &-page{
+      justify-content: center;
+    }
+  }
+  .button-pages{
+    justify-content: center;
+  }
+  .search-input{
+    width: 100%;
+  }
+
+  // change the order of the filter
+  .filter{
+    &-selector{
+      order: 1;
+    }
+    &-type{
+      order: 3;
+    }
+    &-sorting{
+      margin-top: 2.4rem;
+      order: 2;
+    }
+  }
+
+  .submain-header{
+    font-size: 3.2rem;
+  }
+  .subnav{
+    &-text{
+      order: 2;
+    }
+    &-img{
+      order: 1;
+      margin-bottom: 4.0rem;
+    }
+    &-text-title{
+      font-size: 4.8rem;
+    }
+  }
+  footer .row{
+    justify-content: space-between;
+  }
+  .footer{
+    &-copyRight{
+      order: 1;
+      margin-bottom: 2.4rem;
+    }
+    &-socialMedia{
+      order: 3;
+      ul{
+        justify-content: flex-start;
+      }
+    }
+    &-backToTop{
+      order: 2;
+      
+    }
+  }
+}
