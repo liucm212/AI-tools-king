@@ -565,6 +565,9 @@ a {
   .header-title {
     font-size: 4.8rem;
   }
+  .header-img {
+    display: block;
+  }
   .service-title {
     font-size: 2rem;
     margin-bottom: 2.4rem;
