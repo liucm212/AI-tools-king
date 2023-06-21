@@ -5,52 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.css" />
-    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/all.css" />
     <!-- google icon -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- search icon & filter icon -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!-- Noto Sans TC -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap"
+      rel="stylesheet"
     />
     <title>AI 工具王</title>
   </head>
   <body>
     <!-- 背景遮罩bg-black-100 -->
     <div class="bg-black-100">
-      <header>
-        <div class="container">
-          <!-- top bar -->
-          <div
-            class="row justify-content-between align-items-center border-bottom py-20 mb-40"
-          >
-            <div class="col-6 col-md-3">
-              <div class="logo">
-                <h1>
-                  <a href="#">
-                    <img
-                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/logo.png?raw=true"
-                      alt="logo"
-                    />
-                  </a>
-                </h1>
-              </div>
-            </div>
-            <div class="col-md-4 col-2">
-              <nav>
-                <ul class="d-flex qx-20 justify-content-end fz-16">
-                  <li class="mr-20 nav-title"><a href="#">首頁</a></li>
-                  <li class="nav-title"><a href="#">定價</a></li>
-                  <li class="nav-img">
-                    <a href="#"
-                      ><span
-                        class="header-img material-symbols-outlined nav-img"
-                      >
-                        density_medium
-                      </span></a
-                    >
-                  </li>
-                </ul>
-              </nav>
-            </div>
+      <header class="container">
+        <!-- top bar -->
+        <div
+          class="row justify-content-between align-items-center border-bottom py-20 mb-40"
+        >
+          <div class="col-6 col-md-3">
+            <!--  h1外層不需要包div！！！！ -->
+            <h1 class="logo">
+              <a href="#">
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/logo.png?raw=true"
+                  alt="AI工具王的logo，其呈現就是AI工具王的字樣。"
+                />
+              </a>
+            </h1>
+          </div>
+          <div class="col-md-4 col-2">
+            <nav>
+              <ul class="d-flex qx-20 justify-content-end fz-16">
+                <li class="mr-20 nav-title"><a href="#">首頁</a></li>
+                <li class="nav-title"><a href="#">定價</a></li>
+                <li class="nav-img">
+                  <a href="#"
+                    ><span class="header-img material-symbols-outlined nav-img">
+                      density_medium
+                    </span></a
+                  >
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </header>
@@ -59,52 +64,50 @@
         <div class="container">
           <!-- head title section -->
           <section>
-            <div class="row">
-              <div class="col">
-                <h2 class="header-title fz-120 ta-l mb-40 fw-900">
-                  透過<br />
-                  AI 工具王的<br />
-                  強大模型<br />
-                  讓您的業務更聰明
-                </h2>
-              </div>
-            </div>
+            <h2 class="header-title fz-120 ta-l mb-40 fw-900">
+              透過<br />
+              AI 工具王的<br />
+              強大模型<br />
+              讓您的業務更聰明
+            </h2>
             <div class="row">
               <div class="col d-flex justify-content-start">
-                <a href="#" class="button px-40 py-20 mb-100 fz-20">開始使用</a>
+                <a
+                  href="#"
+                  class="button px-40 py-20 mb-100 fz-20 d-inline-block"
+                  >開始使用</a
+                >
               </div>
             </div>
           </section>
           <!-- animation -->
           <section>
-            <h3 class="hidden">animation</h3>
             <div class="d-flex justify-content-end mb-160">
               <div class="animation-item">
                 <img
                   src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/deco.png?raw=true"
-                  alt="animation"
+                  alt="由三根白線組成的圖案，有點像草的樣貌。"
                 />
               </div>
               <div class="animation-item">
                 <img
                   src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/deco.png?raw=true"
-                  alt="animation"
+                  alt="由三根白線組成的圖案，有點像草的樣貌。"
                 />
               </div>
               <div class="animation-item">
                 <img
                   src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/deco.png?raw=true"
-                  alt="animation"
+                  alt="由三根白線組成的圖案，有點像草的樣貌。"
                 />
               </div>
             </div>
           </section>
           <!-- service -->
           <section>
-            <h3 class="hidden">service</h3>
             <div class="row mb-80">
-              <div class="col-12 col-md-4">
-                <h4 class="service-title fz-32 ta-l">我們的服務</h4>
+              <div class="col-12 col-md-3">
+                <h2 class="service-title fz-32 ta-l">我們的服務</h2>
               </div>
               <div class="col-12 col-md-8">
                 <p class="service-body fz-48 ta-l">
@@ -113,170 +116,163 @@
                 </p>
               </div>
             </div>
-            <div class="row mb-160">
-              <div class="col-md-4">
-                <div class="serviceCard">
-                  <img
-                    class="card-img"
-                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/flash%20on.png?raw=true"
-                    alt="flash-on"
-                  />
-                  <h5 class="card-title">快速</h5>
-                  <p class="card-content">
-                    我們先進的推理基礎設施提供了極短的響應時間，讓你的產品服務不間斷。
-                  </p>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="serviceCard">
-                  <img
-                    class="card-img"
-                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/auto%20awesome.png?raw=true"
-                    alt="awesome"
-                  />
-                  <h5 class="card-title">靈活</h5>
-                  <p class="card-content">
-                    我們的服務可以根據您的需求進行靈活調整，同時還可以滿足不同項目和預算的需求。
-                  </p>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="serviceCard">
-                  <img
-                    class="card-img"
-                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/library%20add.png?raw=true"
-                    alt="library-add"
-                  />
-                  <h5 class="card-title">擴充</h5>
-                  <p class="card-content">
-                    我們的服務支持多種擴充選項，可以滿足您的不斷增長的 AI 需求。
-                  </p>
-                </div>
-              </div>
-            </div>
+            <ul class="row mb-160 justify-content-between gap-24">
+              <li class="col-12 col-md-4 serviceCard -mx-md-24">
+                <img
+                  class="card-img"
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/flash%20on.png?raw=true"
+                  alt="白色的閃電。"
+                />
+                <h3 class="card-title">快速</h3>
+                <p class="card-content">
+                  我們先進的推理基礎設施提供了極短的響應時間，讓你的產品服務不間斷。
+                </p>
+              </li>
+              <li class="col-12 col-md-4 serviceCard -mx-md-24">
+                <img
+                  class="card-img"
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/auto%20awesome.png?raw=true"
+                  alt="三顆星星，左邊一顆大的在中間，右邊兩顆小的在上下。"
+                />
+                <h3 class="card-title">靈活</h3>
+                <p class="card-content">
+                  我們的服務可以根據您的需求進行靈活調整，同時還可以滿足不同項目和預算的需求。
+                </p>
+              </li>
+              <li class="col-12 col-md-4 serviceCard -mx-md-24">
+                <img
+                  class="card-img"
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/library%20add.png?raw=true"
+                  alt="白底方塊，中間有一個黑色的加號。"
+                />
+                <h3 class="card-title">擴充</h3>
+                <p class="card-content">
+                  我們的服務支持多種擴充選項，可以滿足您的不斷增長的 AI 需求。
+                </p>
+              </li>
+            </ul>
           </section>
+
           <!-- partner -->
           <section>
-            <h3 class="hidden">partner</h3>
-            <h4 class="ta-l fz-32 fw-900 mb-80">來自合作夥伴</h4>
+            <h2 class="ta-l fz-32 fw-900 mb-80">來自合作夥伴</h2>
             <!-- partner-pic -->
-            <div class="partner-pic partner-pic-top">
-              <div class="row align-items-center flex-nowrap mb-20">
-                <ul class="pic-list d-flex mask">
-                  <li class="list-item">
-                    <img
-                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise.png?raw=true"
-                      alt="enterprise-01"
-                    />
-                  </li>
-                  <li class="list-item">
-                    <img
-                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise1.png?raw=true"
-                      alt="enterprise-02"
-                    />
-                  </li>
-                  <li class="list-item">
-                    <img
-                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise2.png?raw=true"
-                      alt="enterprise-03"
-                    />
-                  </li>
-                  <li class="list-item">
-                    <img
-                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise3.png?raw=true"
-                      alt="enterprise-04"
-                    />
-                  </li>
-                  <li class="list-item">
-                    <img
-                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise4.png?raw=true"
-                      alt="enterprise-05"
-                    />
-                  </li>
-                  <li class="list-item">
-                    <img
-                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise5.png?raw=true"
-                      alt="enterprise-06"
-                    />
-                  </li>
-                  <li class="list-item">
-                    <img
-                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise6.png?raw=true"
-                      alt="enterprise-07"
-                    />
-                  </li>
-                </ul>
-              </div>
-              <div class="partner-pic-down partner-pic-top mb-160">
-                <div class="row align-items-center flex-nowrap">
-                  <ul class="pic-list d-flex mask">
-                    <li class="list-item">
-                      <img
-                        src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise7.png?raw=true"
-                        alt="enterprise-08"
-                      />
-                    </li>
-                    <li class="list-item">
-                      <img
-                        src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise8.png?raw=true"
-                        alt="enterprise-09"
-                      />
-                    </li>
-                    <li class="list-item">
-                      <img
-                        src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise9.png?raw=true"
-                        alt="enterprise-10"
-                      />
-                    </li>
-                    <li class="list-item">
-                      <img
-                        src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise11.png?raw=true"
-                        alt="enterprise-11"
-                      />
-                    </li>
-                    <li class="list-item">
-                      <img
-                        src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise12.png?raw=true"
-                        alt="enterprise-12"
-                      />
-                    </li>
-                    <li class="list-item">
-                      <img
-                        src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise7.png?raw=true"
-                        alt="enterprise-13"
-                      />
-                    </li>
-                  </ul>
-                </div>
-              </div>
+            <div class="partner-pic partner-pic-top overflow-scroll">
+              <ul
+                class="pic-list d-flex justify-content-between align-items-center mask mb-20"
+              >
+                <li class="list-item">
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise.png?raw=true"
+                    alt="enterprise-01"
+                  />
+                </li>
+                <li class="list-item">
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise1.png?raw=true"
+                    alt="enterprise-02"
+                  />
+                </li>
+                <li class="list-item">
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise2.png?raw=true"
+                    alt="enterprise-03"
+                  />
+                </li>
+                <li class="list-item">
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise3.png?raw=true"
+                    alt="enterprise-04"
+                  />
+                </li>
+                <li class="list-item">
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise4.png?raw=true"
+                    alt="enterprise-05"
+                  />
+                </li>
+                <li class="list-item">
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise5.png?raw=true"
+                    alt="enterprise-06"
+                  />
+                </li>
+                <li class="list-item">
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise6.png?raw=true"
+                    alt="enterprise-07"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="partner-pic partner-pic-down overflow-scroll">
+              <ul
+                class="pic-list d-flex mask justify-content-between align-items-center mb-160"
+              >
+                <li class="list-item">
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise7.png?raw=true"
+                    alt="enterprise-08"
+                  />
+                </li>
+                <li class="list-item">
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise8.png?raw=true"
+                    alt="enterprise-09"
+                  />
+                </li>
+                <li class="list-item">
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise9.png?raw=true"
+                    alt="enterprise-10"
+                  />
+                </li>
+                <li class="list-item">
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise11.png?raw=true"
+                    alt="enterprise-11"
+                  />
+                </li>
+                <li class="list-item">
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise12.png?raw=true"
+                    alt="enterprise-12"
+                  />
+                </li>
+                <li class="list-item">
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/enterprise7.png?raw=true"
+                    alt="enterprise-13"
+                  />
+                </li>
+              </ul>
             </div>
             <section>
               <!-- partner evaluation -->
-              <h4 class="hidden">partner evaluation</h4>
-              <div class="row evaluation mb-160">
-                <div class="col-md-4">
+              <ul class="row evaluation mb-160">
+                <li class="col-md-4">
                   <article id="evaluation-01">
                     <div class="evaluation-card">
                       <div class="evaluation-star">
                         <img
                           src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/star.png?raw=true"
-                          alt="star"
+                          alt="一顆白底的小星星。"
                         />
                         <img
                           src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/star.png?raw=true"
-                          alt="star"
+                          alt="一顆白底的小星星。"
                         />
                         <img
                           src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/star.png?raw=true"
-                          alt="star"
+                          alt="一顆白底的小星星。"
                         />
                         <img
                           src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/star.png?raw=true"
-                          alt="star"
+                          alt="一顆白底的小星星。"
                         />
                         <img
                           src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/star.png?raw=true"
-                          alt="star"
+                          alt="一顆白底的小星星。"
                         />
                       </div>
                       <p class="evaluation-content">
@@ -288,7 +284,7 @@
                       <div class="evaluation-partner">
                         <img
                           src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/avatar3.png?raw=true"
-                          alt="client-01"
+                          alt="戴黑框眼鏡，小平頭的陳小姐。"
                         />
                         <div class="partner-info">
                           <p class="partner-name">陳小姐</p>
@@ -297,30 +293,30 @@
                       </div>
                     </div>
                   </article>
-                </div>
-                <div class="col-md-4">
+                </li>
+                <li class="col-md-4">
                   <article id="evaluation-02">
                     <div class="evaluation-card">
                       <div class="evaluation-star">
                         <img
                           src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/star.png?raw=true"
-                          alt="star"
+                          alt="一顆白底的小星星。"
                         />
                         <img
                           src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/star.png?raw=true"
-                          alt="star"
+                          alt="一顆白底的小星星。"
                         />
                         <img
                           src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/star.png?raw=true"
-                          alt="star"
+                          alt="一顆白底的小星星。"
                         />
                         <img
                           src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/star.png?raw=true"
-                          alt="star"
+                          alt="一顆白底的小星星。"
                         />
                         <img
                           src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/star.png?raw=true"
-                          alt="star"
+                          alt="一顆白底的小星星。"
                         />
                       </div>
                       <p class="evaluation-content">
@@ -333,7 +329,7 @@
                       <div class="evaluation-partner">
                         <img
                           src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/avatar1.png?raw=true"
-                          alt="client-02"
+                          alt="穿紫色衣服、圍黃色圍巾、褐色捲髮的劉小姐。"
                         />
                         <div class="partner-info">
                           <p class="partner-name">劉小姐</p>
@@ -342,30 +338,30 @@
                       </div>
                     </div>
                   </article>
-                </div>
-                <div class="col-md-4">
+                </li>
+                <li class="col-md-4">
                   <article id="evaluation-03">
                     <div class="evaluation-card">
                       <div class="evaluation-star">
                         <img
                           src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/star.png?raw=true"
-                          alt="star"
+                          alt="一顆白底的小星星。"
                         />
                         <img
                           src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/star.png?raw=true"
-                          alt="star"
+                          alt="一顆白底的小星星。"
                         />
                         <img
                           src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/star.png?raw=true"
-                          alt="star"
+                          alt="一顆白底的小星星。"
                         />
                         <img
                           src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/star.png?raw=true"
-                          alt="star"
+                          alt="一顆白底的小星星。"
                         />
                         <img
                           src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/star.png?raw=true"
-                          alt="star"
+                          alt="一顆白底的小星星。"
                         />
                       </div>
                       <p class="evaluation-content">
@@ -378,7 +374,7 @@
                       <div class="evaluation-partner">
                         <img
                           src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/avatar2.png?raw=true"
-                          alt="client-03"
+                          alt="落腮鬍、黑頭髮、黑皮膚的黃先生。"
                         />
                         <div class="partner-info">
                           <p class="partner-name">黃先生</p>
@@ -387,69 +383,82 @@
                       </div>
                     </div>
                   </article>
-                </div>
-                <div class="evaluation-footer col-12">
+                </li>
+                <!-- evaluation-dot顯示不出來 -->
+                <li class="evaluation-footer col-12 col-md-12">
                   <ul class="d-flex justify-content-center align-items-center">
                     <li class="evaluation-dot active-dot"><a href="#"></a></li>
                     <li class="evaluation-dot"><a href="#"></a></li>
                     <li class="evaluation-dot"><a href="#"></a></li>
                   </ul>
-                </div>
-              </div>
+                </li>
+              </ul>
             </section>
           </section>
         </div>
         <!-- AI tools -->
         <section class="black-100 ta-l bg-black-0 py-160 border-radius">
           <div class="container">
-            <header class="row">
-              <div class="col-md-12">
-                <h4 class="AI-header fz-80 fw900 ta-c mb-80">
-                  這些超酷的應用，都來自 AI工具王
-                </h4>
-              </div>
-            </header>
-            <section class="row">
-              <div class="mb-24">
-                <div
-                  class="d-flex justify-content-center align-items-center position-relative"
-                >
-                  <span class="material-symbols-outlined search-icon">
-                    search
-                  </span>
-                  <input
-                    type="text"
-                    placeholder="輸入關鍵字搜尋"
-                    class="search-input border-none bg-black-20 fz-16 py-20 px-40 d-block border-radius col-md-12 bg-black-20 pl-76"
-                  />
-                </div>
-              </div>
-            </section>
+            <!-- AI card title -->
+            <h2 class="AI-header fz-80 fw900 ta-c mb-80">
+              這些超酷的應用，都來自 AI工具王
+            </h2>
+            <!-- search bar -->
+            <div
+              class="d-flex justify-content-center align-items-center position-relative mb-24"
+            >
+              <span
+                class="material-symbols-outlined search-icon position-absolute translate-middle-y top-50"
+              >
+                search
+              </span>
+              <input
+                type="text"
+                placeholder="輸入關鍵字搜尋"
+                class="search-input border-none bg-black-20 fz-16 py-20 px-40 d-block border-radius col-md-12 bg-black-20 pl-76"
+              />
+            </div>
             <section>
               <div
                 class="row justify-content-between align-items-center mb-60 black-100"
               >
                 <div class="col-6 col-md-auto filter-selector">
-                  <a
-                    class="button-filter d-flex black-100 align-items-center px-40 py-20"
-                  >
-                    <p class="mr-12">篩選</p>
-                    <span class="material-symbols-outlined"> filter_alt </span>
-                  </a>
+                  <button class="button-filter">
+                    <a class="d-flex black-100 align-items-center px-40 py-20">
+                      <p class="mr-12">篩選</p>
+                      <span class="material-symbols-outlined">
+                        filter_alt
+                      </span>
+                    </a>
+                  </button>
                 </div>
                 <div class="col-12 col-md-6 ta-c filter-type">
                   <ul
                     class="d-flex justify-content-around button-search black-100"
                   >
-                    <li class="button-search-item active-60 black-60">
+                    <li
+                      class="button-search-item flex-shrink-0 active-60 black-60"
+                    >
                       <a href="#">全部</a>
                     </li>
-                    <li class="button-search-item"><a href="#">聊天</a></li>
-                    <li class="button-search-item"><a href="#">影像辨識</a></li>
-                    <li class="button-search-item"><a href="#">翻譯</a></li>
-                    <li class="button-search-item"><a href="#">行銷</a></li>
-                    <li class="button-search-item"><a href="#">克服</a></li>
-                    <li class="button-search-item"><a href="#">生產力</a></li>
+                    <li class="button-search-item flex-shrink-0">
+                      <a href="#">聊天</a>
+                    </li>
+                    <li class="button-search-item flex-shrink-0">
+                      <a href="#">影像辨識</a>
+                    </li>
+                    <li class="button-search-item flex-shrink-0">
+                      <a href="#">翻譯</a>
+                    </li>
+                    <li class="button-search-item flex-shrink-0">
+                      <a href="#">行銷</a>
+                    </li>
+                    <li class="button-search-item flex-shrink-0">
+                      <a href="#">克服</a>
+                    </li>
+                    <li class="button-search-item flex-shrink-0">
+                      <a href="#">生產力</a>
+                    </li>
                   </ul>
                 </div>
                 <div class="col-auto col-md-auto filter-sorting">
@@ -474,7 +483,7 @@
                   <img
                     class="AIcard-img"
                     src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool1.png?raw=true"
-                    alt="pic1"
+                    alt="呈現AI科技感的畫面，一個像碗的容器裝著許多方塊。"
                   />
                 </div>
                 <!-- card-body -->
@@ -493,7 +502,9 @@
                     </li>
                     <li class="AIcard-list-group-item align-items-center">
                       <p><a href="#" class="hashtag">#聊天</a></p>
-                      <p class="material-symbols-outlined share-icon">share</p>
+                      <p class="material-symbols-outlined share-icon">
+                        <a href="#">share</a>
+                      </p>
                     </li>
                   </ul>
                 </div>
@@ -504,7 +515,7 @@
                   <img
                     class="AIcard-img"
                     src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool2.png?raw=true"
-                    alt="pic2"
+                    alt="火車鐵軌相互交錯連接。"
                   />
                 </div>
                 <!-- AIcard-body -->
@@ -523,7 +534,9 @@
                     </li>
                     <li class="AIcard-list-group-item align-items-center">
                       <p><a href="#" class="hashtag">#影像辨識</a></p>
-                      <p class="material-symbols-outlined share-icon">share</p>
+                      <p class="material-symbols-outlined share-icon">
+                        <a href="#">share</a>
+                      </p>
                     </li>
                   </ul>
                 </div>
@@ -534,7 +547,7 @@
                   <img
                     class="AIcard-img"
                     src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool3.png?raw=true"
-                    alt="pic3"
+                    alt="藍色球在中間，外層被一圈圈的圓形包圍，漸漸往外擴，像土星環。"
                   />
                 </div>
                 <!-- AIcard-body -->
@@ -553,7 +566,9 @@
                     </li>
                     <li class="AIcard-list-group-item align-items-center">
                       <p><a href="#" class="hashtag">#翻譯</a></p>
-                      <p class="material-symbols-outlined share-icon">share</p>
+                      <p class="material-symbols-outlined share-icon">
+                        <a href="#">share</a>
+                      </p>
                     </li>
                   </ul>
                 </div>
@@ -564,7 +579,7 @@
                   <img
                     class="AIcard-img"
                     src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool4.png?raw=true"
-                    alt="pic4"
+                    alt="像病毒的晶球，一顆球延伸很多細長的柱。"
                   />
                 </div>
                 <!-- AIcard-body -->
@@ -583,7 +598,9 @@
                     </li>
                     <li class="AIcard-list-group-item align-items-center">
                       <p><a href="#" class="hashtag">#行銷</a></p>
-                      <p class="material-symbols-outlined share-icon">share</p>
+                      <p class="material-symbols-outlined share-icon">
+                        <a href="#">share</a>
+                      </p>
                     </li>
                   </ul>
                 </div>
@@ -594,7 +611,7 @@
                   <img
                     class="AIcard-img"
                     src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool5.png?raw=true"
-                    alt="pic5"
+                    alt="類似半導體晶片製程的畫面。"
                   />
                 </div>
                 <!-- AIcard-body -->
@@ -613,7 +630,9 @@
                     </li>
                     <li class="AIcard-list-group-item align-items-center">
                       <p><a href="#" class="hashtag">#客服</a></p>
-                      <p class="material-symbols-outlined share-icon">share</p>
+                      <p class="material-symbols-outlined share-icon">
+                        <a href="#">share</a>
+                      </p>
                     </li>
                   </ul>
                 </div>
@@ -624,7 +643,7 @@
                   <img
                     class="AIcard-img"
                     src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/tool6.png?raw=true"
-                    alt="pic6"
+                    alt="到對到相同形狀的洞的那種玩具。"
                   />
                 </div>
                 <!-- AIcard-body -->
@@ -643,7 +662,9 @@
                     </li>
                     <li class="AIcard-list-group-item align-items-center">
                       <p><a href="#" class="hashtag">#生產力</a></p>
-                      <p class="material-symbols-outlined share-icon">share</p>
+                      <p class="material-symbols-outlined share-icon">
+                        <a href="#">share</a>
+                      </p>
                     </li>
                   </ul>
                 </div>
@@ -651,23 +672,25 @@
             </ul>
 
             <!-- page -->
-            <div class="AI_page row justify-content-end ta-c black-100 fz-12">
-              <div class="col-md-auto">
-                <ul class="button-pages d-flex justify-content-end">
-                  <li class="button-page-item active-100"><a href="#">1</a></li>
-                  <li class="button-page-item"><a href="#">2</a></li>
-                  <li class="button-page-item"><a href="#">3</a></li>
-                  <li class="button-page-item"><a href="#">4</a></li>
-                  <li class="button-page-item"><a href="#">5</a></li>
-                  <li class="button-page-item button-page-item-next">
-                    <a href="#"
-                      ><img
-                        src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/keyboard%20arrow%20right.png?raw=true"
-                        alt="arrow-right"
-                    /></a>
-                  </li>
-                </ul>
-              </div>
+            <div class="AI-page row justify-content-end ta-c fz-12">
+              <ul
+                class="button-pages d-flex justify-content-end align-items-center"
+              >
+                <li class="button-page-item active-100">
+                  <a href="#">1</a>
+                </li>
+                <li class="button-page-item"><a href="#">2</a></li>
+                <li class="button-page-item"><a href="#">3</a></li>
+                <li class="button-page-item"><a href="#">4</a></li>
+                <li class="button-page-item"><a href="#">5</a></li>
+                <li class="button-page-item button-page-item-next">
+                  <a href="#"
+                    ><img
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/icons/keyboard%20arrow%20right.png?raw=true"
+                      alt="往右上方指的箭頭"
+                  /></a>
+                </li>
+              </ul>
             </div>
           </div>
         </section>
@@ -675,12 +698,11 @@
         <div class="container">
           <!-- submain -->
           <section>
-            <h3 class="hidden">sub main</h3>
             <div class="row flex-column align-items-center py-160">
               <div class="col">
-                <h4 class="submain-header fz-48 fw-900 mb-40">
+                <h2 class="submain-header fz-48 fw-900 mb-40">
                   現在就來建立屬於你的服務吧
-                </h4>
+                </h2>
               </div>
               <div class="col d-flex justify-content-center">
                 <a href="#" class="d-flex button qx-16 py-20 px-40 fz-20 fw900">
@@ -690,60 +712,54 @@
               </div>
             </div>
           </section>
-
-          <!-- subnav -->
-          <section>
-            <h3 class="hidden">sub nav</h3>
-            <div class="row justify-content-between py-80 border-top">
-              <div class="subnav-text col-12 col-md-6">
-                <ul class="fz-80 fw-900 ta-l qy-8">
-                  <li class="subnav-text-title"><a href="#">首頁</a></li>
-                  <li class="subnav-text-title"><a href="#">定價</a></li>
-                </ul>
-              </div>
-              <div class="subnav-img col-8 col-md-6 d-flex justify-content-end">
-                <!-- 用寬度來限制img的最大值 -->
-                <a href="#" class="subnav-pic">
-                  <img
-                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/logo.png?raw=true"
-                    alt="logo"
-                  />
-                </a>
-              </div>
-            </div>
-          </section>
         </div>
       </main>
 
       <!-- footer -->
-      <div class="container">
-        <footer>
-          <div class="row lh-15 py-32 border-top">
-            <div
-              class="footer-copyRight col-6 col-md-2 d-flex justify-content-start"
-            >
-              <h6>AI工具王 &copy; 2023</h6>
-            </div>
-            <div class="col-12 col-md-8 footer-socialMedia">
-              <ul class="d-flex qx-20">
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Instagram</a></li>
+      <footer class="container">
+        <!-- 首頁、定價 -->
+        <section>
+          <div class="row justify-content-between py-80 border-top">
+            <div class="subnav-text col-12 col-md-6">
+              <ul class="fz-80 fw-900 ta-l qy-8">
+                <li class="subnav-text-title"><a href="#">首頁</a></li>
+                <li class="subnav-text-title"><a href="#">定價</a></li>
               </ul>
             </div>
-            <div
-              class="footer-backToTop col-auto col-md-2 d-flex justify-content-end"
-            >
-              <a href="#" class="d-flex">
-                <p>Back To Top</p>
-                <span class="material-symbols-outlined">
-                  arrow_upward_alt
-                </span>
+            <div class="subnav-img col-8 col-md-6 d-flex justify-content-end">
+              <!-- 用寬度來限制img的最大值 -->
+              <a href="#" class="subnav-pic">
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023web-camp/logo.png?raw=true"
+                  alt="AI工具王的logo，其呈現就是AI工具王的字樣。"
+                />
               </a>
             </div>
           </div>
-        </footer>
-      </div>
+        </section>
+        <div class="row lh-15 py-32 border-top justify-content-between">
+          <div
+            class="footer-copyRight col-6 col-md-2 d-flex justify-content-start"
+          >
+            <h3>AI工具王 &copy; 2023</h3>
+          </div>
+          <div class="col-12 col-md-8 footer-socialMedia">
+            <ul class="d-flex qx-20">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+          <div
+            class="footer-backToTop col-6 col-md-2 d-flex justify-content-end"
+          >
+            <a href="#" class="d-flex">
+              <p>Back To Top</p>
+              <span class="material-symbols-outlined"> arrow_upward_alt </span>
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

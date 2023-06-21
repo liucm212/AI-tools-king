@@ -143,3 +143,13 @@
   }
 }
 
+.gap{
+  &-24{
+    gap: 2.4rem;
+  }
+}
+@media (min-width:768px){
+  .-mx-md-24{
+    margin: 0 -2.4rem;
+  }
+}
